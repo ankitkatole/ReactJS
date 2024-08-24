@@ -2,6 +2,7 @@ import "./Product.css";
 
 function Product({ title, description, url, oldPrice, newPrice }) {
     return (
+        
         <div className="Product">
             <h1>{title}</h1>
             <img src={url} />
