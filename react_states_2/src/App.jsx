@@ -1,10 +1,9 @@
 import './App.css'
-import ToDoList from "./ToDoList"
 import Lottery from "./Lottery"
 function App() {
   return (
     <>
-      <Lottery />
+      <Lottery n={3} winningSum={9}/>
     </>
   )
 }
