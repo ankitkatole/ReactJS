@@ -4,9 +4,9 @@ import Ticket from "./Ticket";
 import "./Lottery.css"
 
 
-function Lottery({n=3, winningSum=15}){
+function Lottery({n=3, winCondition}){
     let [ticket, setTicket] = useState(generateTicket(n));
-    let isWinning = sum(ticket) === winningSum;
+    let isWinning = winCondition(ticket);
     let buyticket = ()=>{
         setTicket(generateTicket(3))
     }
